@@ -31,9 +31,10 @@ describe("validators", function () {
     });
 
     it("isPhone() 手机号码验证", function () {
-        expect(v.isPhone('13611779473')).to.be.true;
-        expect(v.isPhone('+8613611779473')).to.be.true;
-        expect(v.isPhone('+23613611779473')).to.be.true;
+        assert.equal( v.isPhone('13611779473') ,true)
+        assert.equal(v.isPhone('13611779473') ,true);
+        assert.equal(v.isPhone('+8613611779473') ,true);
+        assert.equal(v.isPhone('+23613611779473') ,true);
     });
 
 });
